@@ -39,31 +39,8 @@ class Footer extends Component {
         </nav>
         <nav className={styles.footerNav2}>
           <a
-            href="https://www.instagram.com/anoun.company"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={instagramIcon}
-              className={styles.footerIcon}
-              width="18px"
-              alt="instagram-social-link"
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCr6HXKDblu-_gxDxCZMbRoQ?view_as=subscriber"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={youtubeIcon}
-              className={styles.footerIcon}
-              width="24px"
-              alt="youtube-social-link"
-            />
-          </a>
-          <a
-            href="https://github.com/anoun"
+            href="https://github.com/wstrellis"
+            title="https://github.com/wstrellis"
             target="_blank"
             rel="noopener noreferrer"
           >

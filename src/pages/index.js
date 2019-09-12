@@ -21,22 +21,19 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO />
         <section className="anoun-home--section1">
-          <h3>Gatsby Starter by <span className="anoun-title">ANOUN</span></h3>
-          <h4>Material Business</h4>
+          <h2><span className="anoun-title">Westley Strellis</span></h2>
+          <h4>Full Stack Software Engineer</h4>
           <img src={heroImage} alt="anoun-hero" />
           <Link to="/contact/">
             <Button raised className="mdc-button--round">
-              Contact Us
+              Contact Me
             </Button>
           </Link>
         </section>
         <section className="anoun-home--section2">
-          <h3>This is the power statement section</h3>
-          <h3>Say something that stands out</h3>
-          <h3>Say something visitors will remember</h3>
-          <h3>
-            Say something <strong>bold</strong> about your brand
-          </h3>
+          <h3>I am a builder.</h3>
+          <h3>I am a creator.</h3>
+          <h3>I am a maker.</h3>
         </section>
         <section className="anoun-home--section3">
           <h2>Blog Posts</h2>

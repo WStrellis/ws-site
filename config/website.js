@@ -1,6 +1,6 @@
 module.exports = {
   // SEO
-  title: "Gatsby Starter by ANOUN", // Navigation and Site Title
+  title: "Westley Strellis", // Navigation and Site Title
   titleTemplate: "%s · Material Business - Markdown", // Template for Page Titles
   description:
     "A Gatsby Starter by ANOUN with content sourcing from Markdown files. It uses the Material Design language and components for styling.",
@@ -9,8 +9,8 @@ module.exports = {
 
   // Manifest
   icon: "src/favicon.png", // Used for manifest favicon generation
-  short_name: "ANOUN", // shortname for manifest. MUST be shorter than 12 characters
-  owner: "ANOUN", // Author
+  short_name: "WStrellis", // shortname for manifest. MUST be shorter than 12 characters
+  owner: "Westley Strellis", // Author
   theme_color: "#663399",
   background_color: "#ffffff",
 
