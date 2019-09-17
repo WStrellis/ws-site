@@ -1,10 +1,10 @@
 module.exports = {
   // SEO
   title: "Westley Strellis", // Navigation and Site Title
-  titleTemplate: "%s · Material Business - Markdown", // Template for Page Titles
+  titleTemplate: "%s · Full Stack Software Developer", // Template for Page Titles
   description:
-    "A Gatsby Starter by ANOUN with content sourcing from Markdown files. It uses the Material Design language and components for styling.",
-  siteUrl: "https://gatsby-starter-material-business-markdown.netlify.com", // Domain of your site. No trailing slash!
+    "Westley Strellis' person website. Include his portfolio and blog.",
+  siteUrl: "https://westleystrellis.com", // Domain of your site. No trailing slash!
   image: "/images/anoun-share-image.png", // Used for SEO Share Image
 
   // Manifest
@@ -15,6 +15,6 @@ module.exports = {
   background_color: "#ffffff",
 
   // Social and Analytics
-  twitterUsername: "@anouncompany", // Twitter Username
-  googleAnalyticsID: "", // Google Analytics Tag ID
+  // twitterUsername: "@anouncompany", 
+  googleAnalyticsID: "", 
 }

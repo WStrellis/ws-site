@@ -162,12 +162,22 @@ code span::selection {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  background: rgb(102, 51, 153);
+  background: $accent-gold;
   background: linear-gradient(
     130deg,
-    rgba(102, 51, 153, 1) 0%,
-    rgba(164, 110, 218, 1) 100%,
-    rgba(255, 255, 255, 1) 100%
+    $accent-gold 0%,
+    $accent-gold 60%,
+    $on-primary 60%,
+    $on-primary 65%,
+    $accent-gold 65%,
+    $accent-gold 70%,
+    $on-primary 70%,
+    $on-primary 75%,
+    $accent-gold 75%,
+    $accent-gold 80%,
+    $primary 80%,
+    $primary 100%,
+
   );
   color: var(--mdc-theme-on-primary);
   padding: 1rem;
@@ -237,7 +247,7 @@ code span::selection {
 .blog-posts__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: 2em;
+  grid-gap: 2rem;
 }
 
 .anoun-blog-card {

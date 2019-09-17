@@ -22,7 +22,6 @@ const SEO = ({
             defaultDescription: description
             siteUrl
             defaultImage: image
-            twitterUsername
             facebookAppID
           }
         }

@@ -11,35 +11,27 @@ class About extends React.Component {
   render() {
     return (
       <CenteredLayout>
-        <SEO title="Contact Us" />
-        <h1>Contact Us</h1>
+        <SEO title="Contact Me" />
+        <h1>Contact Me</h1>
         <section className="page-main__section contact-page-main__section">
           <div className="anoun-contact-links__section">
             <div>
               <h3>Call/Text</h3>
               <a
-                href="tel:+12088079333"
+                href="tel:+7705493970"
               >
-                (208) 807-9333
+                (770) 549-3970
               </a>
             </div>
             <div>
               <h3>Email</h3>
               <a
-                href="mailto:hello@anoun.company"
+                href="mailto:wstrells@gmail.com"
               >
-                hello@anoun.company
+                wstrellis@gmail.com
               </a>
             </div>
-            <div>
-              <h3>Instagram</h3>
-              <a
-                href="https://www.instagram.com/anoun.company"
-              >
-                @anoun.company
-              </a>
-            </div>
-          </div>
+         </div>
           <h3>or just shoot us an email here!</h3>
           <ContactForm />
         </section>

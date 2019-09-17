@@ -24,11 +24,6 @@ class IndexPage extends React.Component {
           <h2><span className="anoun-title">Westley Strellis</span></h2>
           <h4>Full Stack Software Engineer</h4>
           <img src={heroImage} alt="anoun-hero" />
-          <Link to="/contact/">
-            <Button raised className="mdc-button--round">
-              Contact Me
-            </Button>
-          </Link>
         </section>
         <section className="anoun-home--section2">
           <h3>I am a builder.</h3>
