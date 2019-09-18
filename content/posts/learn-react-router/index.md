@@ -26,9 +26,6 @@ One disavantage of this technology is that the initial downlaod may be quite lar
 
 Client-Side routing does not mean that the client only makes one request to the server ever. It will still communicate with the server to read, modify, and delete data as the user performs actions within the app.  
 
-![A diagram showing how server-side routing and client-side routing work](routing-diagram.png)  
-
-
 ### React Router  
 
 React Router is library for use with React applications that allows developers to implement client-side routing within their applications.  
@@ -38,15 +35,15 @@ The official documentation can be found here:
 
 Let's looks at the basic components of React Router and how to use them.
 
-#### Install React Router  
+### Install React Router  
 
 Add the React Router library to your React app with this command:  
 
-```
-npm i react-router-dom
-```
+```sh
+  npm i react-router-dom
+```     
 
-#### BrowserRouter Component  
+### BrowserRouter Component  
 
 The BrowserRouter component is the backbone of a client-side routing setup. Only one of these components is necessary in an application. This component creates a 'history' object which is similar to the history object in a browser. BrowserRouter uses the history object to route the user to different pages of the app. When a user clicks the 'forward' or 'back' buttons in their browser window BrowserRouter will use the history object to determine what page to load.  
 
@@ -67,7 +64,7 @@ ReactDom.render(
 
 Now that `<Router>` is wrapping the application we can use the two other main components of React Router: ` Route` and `Link`.
 
-#### Route  
+### Route  
 
 The `<Route>` component is used to render different components on your page. It gives the illusion of navigating to a different page, when it is actually just changing elements on the DOM.  
 
@@ -81,21 +78,24 @@ import { Route } from 'react-router-dom'
 ```  
 
 Route requires as least two properties in order to function. A 'path' prop and one of 'component', 'render', or 'children'.  
+<dl>
+<dt>
+Path Prop</dt>
+<dd>The path prop tells the route WHEN to render a component. If the location.pathname equals the path contained in this prop, `Route` will render the component.</dd> 
 
-Path Prop  
-  : The path prop tells the route WHEN to render a component. If the location.pathname equals the path contained in this prop, `Route` will render the component.  
-
-  Component Prop  
-    : This tells the Route component what to render when the path is a match.  
+  <dt>Component Prop</dt>
+  <dd>This tells the Route component what to render when the path is a match. </dd> 
 
 
-  Render Prop  
-    : Similar to the 'component' prop, this tells the Route component what to render when the path is a match. However, the 'render' prop takes an expression as an arugment. This expression can be used to pass props down to the component which will be rendered.   
+  <dt>Render Prop</dt>
+   <dd>Similar to the 'component' prop, this tells the Route component what to render when the path is a match. However, the 'render' prop takes an expression as an arugment. This expression can be used to pass props down to the component which will be rendered.</dd>   
 
-  Children Prop  
-    : When the 'children' prop is used the speficied component will always be mounted to the DOM even if the path does not match. This can be useful for navbars and footers that appear across multiple pages.  
+  <dt>Children Prop</dt>
+<dd>When the 'children' prop is used the speficied component will always be mounted to the DOM even if the path does not match. This can be useful for navbars and footers that appear across multiple pages.</dd> 
+</dl>  
 
-#### Link Component  
+
+### Link Component  
 
 The `<Link>` component is render on the DOM as an `<a>` tag. React Router adds some special props to it.
 
@@ -107,12 +107,11 @@ import { Route, Link } from 'react-router-dom'
 <Link to='/store'>Store</Link>
 <Route path='/store' component={ Store }/>
 
-```
-
+```  
 
 Here is a demo which demonstrates the basics of React Router on CodeSandbox.io:  
-[ React Router Basic ]( https://codesandbox.io/s/react-router-practice-xw2q6 )
+[ React Router Basic ]( https://codesandbox.io/s/react-router-practice-xw2q6 )  
 
 
 This demo utilizes some of the more advanced features of React Router such as creating nested routes and changing the pages with methods from the history object:  
-[ React Router Advanced ]( https://codesandbox.io/s/react-router-avengers-demo-3spo9)
+[ React Router Advanced ]( https://codesandbox.io/s/react-router-avengers-demo-3spo9)  
