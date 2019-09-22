@@ -147,12 +147,15 @@ code span::selection {
   align-items: center;
   justify-content: center;
   text-align: left;
+  background-color: $primary;
+  color: $on-primary;
 }
 
-.anoun-home--section1 > h3 {
+.anoun-home--section1 > h2 {
   margin: 0 auto;
   text-align: center;
 }
+
 .anoun-home--section1 > img {
   max-width: 336px;
 }

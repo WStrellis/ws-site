@@ -7,8 +7,10 @@ import Layout from "../components/Layout/Layout"
 import Button from "@material/react-button"
 import Card from "@material/react-card"
 
+import ParticleField from '../components/particle-field/particle.component'
+
 // import idahoOutlineLightTheme from "../images/icons/idaho-outline--lightTheme.svg"
-import heroImage from "../images/undraw-hero-image.svg"
+// import heroImage from "../images/undraw-hero-image.svg"
 
 // Styles
 import "../styles/app.scss"
@@ -23,7 +25,7 @@ class IndexPage extends React.Component {
         <section className="anoun-home--section1">
           <h2><span className="anoun-title">Westley Strellis</span></h2>
           <h4>Full Stack Software Engineer</h4>
-          <img src={heroImage} alt="anoun-hero" />
+          <ParticleField/>
         </section>
         <section className="anoun-home--section2">
           <h3>I am a builder.</h3>
