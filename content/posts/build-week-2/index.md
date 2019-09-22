@@ -1,6 +1,6 @@
 ---
 title: Lambda School Build Week 2
-date: 2019-23-16T06:00:00.000+00:00
+date: 2019-09-20T06:00:00.000+00:00
 featured_image: rural-school-wireframe.jpg
 ---
 

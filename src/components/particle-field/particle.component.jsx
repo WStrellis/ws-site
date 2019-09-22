@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
+import './particle.component.module.scss'
 /*
 width	string	The width of the canvas.
 height	string	The height of the canvas.
@@ -13,8 +14,6 @@ export default function ParticleField() {
       <Particles
         className='particlefield--wrapper'
         canvasClassName='particlefield--canvas'
-        width={ window.innerHeight }
-        height='100'
         params={{
           particles: {
             number: {

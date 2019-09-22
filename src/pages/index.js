@@ -23,8 +23,10 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO />
         <section className="anoun-home--section1">
-          <h2><span className="anoun-title">Westley Strellis</span></h2>
-          <h4>Full Stack Software Engineer</h4>
+          <div className="home--section1-title-text">
+            <h2><span className="anoun-title">Westley Strellis</span></h2>
+            <h4>Full Stack Software Engineer</h4>
+          </div>
           <ParticleField/>
         </section>
         <section className="anoun-home--section2">

@@ -142,15 +142,21 @@ code span::selection {
 
 .anoun-home--section1 {
   min-height: 80vh;
+  position: relative;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
+  text-align: center;
   background-color: $primary;
   color: $on-primary;
 }
 
+.home--section1-title-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
 .anoun-home--section1 > h2 {
   margin: 0 auto;
   text-align: center;
