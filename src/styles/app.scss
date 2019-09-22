@@ -142,6 +142,8 @@ code span::selection {
 
 .anoun-home--section1 {
   min-height: 80vh;
+  max-height: 80vh;
+  overflow: hidden;
   position: relative;
   top: 0;
   left: 0;

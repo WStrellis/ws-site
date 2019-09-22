@@ -14,6 +14,7 @@ import ParticleField from '../components/particle-field/particle.component'
 
 // Styles
 import "../styles/app.scss"
+import '../components/particle-field/particle.module.scss'
 
 class IndexPage extends React.Component {
   render() {
@@ -27,7 +28,6 @@ class IndexPage extends React.Component {
             <h2><span className="anoun-title">Westley Strellis</span></h2>
             <h4>Full Stack Software Engineer</h4>
           </div>
-          <ParticleField/>
         </section>
         <section className="anoun-home--section2">
           <h3>I am a builder.</h3>
