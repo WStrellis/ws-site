@@ -9,14 +9,10 @@ import Card from "@material/react-card"
 
 import ParticleField from '../components/particle-field/particle.component'
 
-import { GetWindowSize } from '../utils/custom_hooks'
 
-// import idahoOutlineLightTheme from "../images/icons/idaho-outline--lightTheme.svg"
-// import heroImage from "../images/undraw-hero-image.svg"
 
 // Styles
 import "../styles/app.scss"
-import '../components/particle-field/particle.module.scss'
 
 function IndexPage( props ){
   // const [ windowSize, setWindowSize ] = useState([])
