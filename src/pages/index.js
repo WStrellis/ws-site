@@ -19,7 +19,8 @@ import "../styles/app.scss"
 import '../components/particle-field/particle.module.scss'
 
 function IndexPage( props ){
-  const windowSize = GetWindowSize()
+  // only call GetWindowSize if there is window object. Used to prevent Build() errors
+  const windowSize = window && GetWindowSize() || null
   const { data } = props
   const posts = data.allMarkdownRemark.edges
 
