@@ -14,7 +14,7 @@ I met my team. We have one Web Developer, four React Developers, and one Back En
 
 We did not have a UX Designer or any designs to start with so I made some simple wire frames with pen and paper. The group liked my designs.
 
-![Sketch of a web site](rural-school-wireframe.jpg)
+![Sketch of a web site](https://s3.amazonaws.com/wstrellis-images/animals/animal-close-up-horse-48785_resized_compressed.jpg)
 
 After creating the wire frame sketch I made  a flow chart  to try to determine what pages our app would need and how users would navigate between them. I used Google Draw to make the flow chart. My team couldn't liked the flow chart so those we the pages we decided to make.  
 

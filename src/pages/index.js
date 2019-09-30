@@ -9,6 +9,8 @@ import Card from "@material/react-card"
 
 import ParticleField from '../components/particle-field/particle.component'
 
+import { GetWindowSize } from '../utils/custom_hooks'
+
 // import idahoOutlineLightTheme from "../images/icons/idaho-outline--lightTheme.svg"
 // import heroImage from "../images/undraw-hero-image.svg"
 
@@ -16,10 +18,11 @@ import ParticleField from '../components/particle-field/particle.component'
 import "../styles/app.scss"
 import '../components/particle-field/particle.module.scss'
 
-class IndexPage extends React.Component {
-  render() {
-  const { data } = this.props
-    const posts = data.allMarkdownRemark.edges
+function IndexPage( props ){
+  const windowSize = GetWindowSize()
+  const { data } = props
+  const posts = data.allMarkdownRemark.edges
+
     return (
       <Layout>
         <SEO />
@@ -28,6 +31,7 @@ class IndexPage extends React.Component {
             <h2><span className="anoun-title">Westley Strellis</span></h2>
             <h4>Full Stack Software Engineer</h4>
           </div>
+            <ParticleField windowSize={ windowSize }/>
         </section>
         <section className="anoun-home--section2">
           <h3>I am a builder.</h3>
@@ -71,7 +75,6 @@ class IndexPage extends React.Component {
       </Layout>
     )
   }
-}
 
 export default IndexPage
 

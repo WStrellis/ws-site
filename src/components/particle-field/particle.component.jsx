@@ -1,19 +1,21 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { particlefieldWrapper, particlefieldCanvas } from './particle.module.scss'
+import styles from './particle.module.scss'
+
 /*
-width	string	The width of the canvas.
-height	string	The height of the canvas.
-params	object	The parameters of the particles instance.
-style	object	The style of the canvas element.
-className	string	The class name of the canvas wrapper.
-canvasClassName	string	the class name of the canvas.
+width -	The width of the canvas.
+height -	The height of the canvas.
+params -	object	- The parameters of the particles instance.
+style -	object -	The style of the canvas element.
+className	- The class name of the canvas wrapper.
+canvasClassName	- the class name of the canvas.
 */
-export default function ParticleField() {
+export default function ParticleField({ windowSize }) {
   return (
       <Particles
-        className='particlefieldWrapper'
-        canvasClassName='particlefieldCanvas'
+        width={ windowSize[0]}
+        height={ windowSize[1]}
+        className={styles.particlefieldWrapper}
         params={{
           particles: {
             number: {
