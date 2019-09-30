@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/SEO/SEO"
@@ -19,10 +19,17 @@ import "../styles/app.scss"
 import '../components/particle-field/particle.module.scss'
 
 function IndexPage( props ){
+  // const [ windowSize, setWindowSize ] = useState([])
+  const [ showParticles, setShowParticles ] = useState(false)
   // only call GetWindowSize if there is window object. Used to prevent Build() errors
-  const windowSize = window && GetWindowSize() || null
+  // const windowSize = (typeof(window) !== 'undefined' && GetWindowSize()) || [0,0]
   const { data } = props
   const posts = data.allMarkdownRemark.edges
+
+  /* mount particles field AFTER this element has rendered
+  to prevent 'window is not defined'
+  */
+  useEffect(()=> setShowParticles(true), [])
 
     return (
       <Layout>
@@ -32,7 +39,7 @@ function IndexPage( props ){
             <h2><span className="anoun-title">Westley Strellis</span></h2>
             <h4>Full Stack Software Engineer</h4>
           </div>
-            <ParticleField windowSize={ windowSize }/>
+        { showParticles && <ParticleField /> }
         </section>
         <section className="anoun-home--section2">
           <h3>I am a builder.</h3>

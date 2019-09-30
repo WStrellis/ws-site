@@ -1,6 +1,7 @@
-import React from "react";
+import React  from "react";
 import Particles from "react-particles-js";
 import styles from './particle.module.scss'
+import { GetWindowSize } from "../../utils/custom_hooks";
 
 /*
 width -	The width of the canvas.
@@ -10,7 +11,10 @@ style -	object -	The style of the canvas element.
 className	- The class name of the canvas wrapper.
 canvasClassName	- the class name of the canvas.
 */
-export default function ParticleField({ windowSize }) {
+export default function ParticleField() {
+
+  const windowSize = GetWindowSize()
+
   return (
       <Particles
         width={ windowSize[0]}
