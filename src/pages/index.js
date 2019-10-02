@@ -32,15 +32,18 @@ function IndexPage( props ){
         <SEO />
         <section className="anoun-home--section1">
           <div className="home--section1-title-text">
-            <h2><span className="anoun-title">Westley Strellis</span></h2>
+            <h2>Westley Strellis</h2>
             <h4>Full Stack Software Engineer</h4>
           </div>
         { showParticles && <ParticleField /> }
         </section>
         <section className="anoun-home--section2">
-          <h3>I am a builder.</h3>
+          {/* <h3>I am a builder.</h3>
           <h3>I am a creator.</h3>
-          <h3>I am a maker.</h3>
+          <h3>I am a maker.</h3> */}
+          <h3>IMAGINE</h3>
+          <h3>DESIGN</h3>
+          <h3>BUILD</h3>
         </section>
         <section className="anoun-home--section3">
           <h2>Blog Posts</h2>

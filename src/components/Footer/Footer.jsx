@@ -15,12 +15,13 @@ class Footer extends Component {
         <nav className={styles.footerNav}>
           {/* LOGO */}
           <Link to="/">
-            <img
+            {/* <img
               src={footerLogo}
               width="100px"
               alt="ANOUN-logo"
               className={styles.footerLogo}
-            />
+            /> */}
+            <h4>Westley Strellis</h4>
           </Link>
           <ul>
             <li>

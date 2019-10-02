@@ -31,7 +31,7 @@ Client-Side routing does not mean that the client only makes one request to the 
 React Router is library for use with React applications that allows developers to implement client-side routing within their applications.  
 
 The official documentation can be found here:  
-[ React Router ](https://reacttraining.com/react-router/web/example/basic)
+[ React Router ](https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/blogposts/routing-diagram.png)
 
 Let's looks at the basic components of React Router and how to use them.
 

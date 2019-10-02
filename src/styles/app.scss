@@ -159,6 +159,33 @@ code span::selection {
   left: 50%;
   z-index: 500;
   transform: translate( -50%, -50%);
+  
+  h2{ 
+      font-size: 2rem;
+      font-weight: 700;
+  }
+
+    h4{
+      font-size: 1.5rem;
+    }
+
+  @media screen and (min-width: 800px){
+    h2{ 
+        font-size: 3rem;
+    }
+    h4{
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    h2{ 
+        font-size: 4rem;
+    }
+    h4{
+      font-size: 2.5rem;
+    }
+  }
 }
 .anoun-home--section1 > h2 {
   margin: 0 auto;
@@ -193,11 +220,21 @@ code span::selection {
   );
   color: var(--mdc-theme-on-primary);
   padding: 1rem;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .anoun-home--section2 h3 {
   margin: 1.75rem;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+
+  @media screen and (min-width: 800px){
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1200px){
+    font-size: 2.5rem;
+  }
 }
 
 .anoun-home--section3 {
