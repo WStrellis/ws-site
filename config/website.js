@@ -15,6 +15,6 @@ module.exports = {
   background_color: "#ffffff",
 
   // Social and Analytics
-  // twitterUsername: "@anouncompany", 
-  googleAnalyticsID: "", 
+  // twitterUsername: "@anouncompany",
+  googleAnalyticsID: "",
 }

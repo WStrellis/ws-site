@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const website = require("./config/website") 
+const website = require("./config/website")
 
 module.exports = {
   siteMetadata: {
@@ -21,13 +21,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/posts`,
         name: `posts`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
       },
     },
     {
@@ -79,7 +72,7 @@ module.exports = {
                     // setting this to '{ sh: "bash" }' will let you use
                     // the language "sh" which will highlight using the
                     // bash highlighter.
-                    aliases: { sh: "bash"},
+                    aliases: { sh: "bash" },
                     // This toggles the display of line numbers globally alongside the code.
                     // To use it, add the following line in src/layouts/index.js
                     // right after importing the prism color scheme:
