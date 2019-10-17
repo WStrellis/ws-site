@@ -3,7 +3,7 @@ module.exports = {
   title: "Westley Strellis", // Navigation and Site Title
   titleTemplate: "%s · Full Stack Software Developer", // Template for Page Titles
   description:
-    "Westley Strellis' person website. Include his portfolio and blog.",
+    "Westley Strellis' personal website. Includes his portfolio and blog.",
   siteUrl: "https://westleystrellis.com", // Domain of your site. No trailing slash!
   image: "/images/site_image.png", // Used for SEO Share Image
 
@@ -15,6 +15,5 @@ module.exports = {
   background_color: "#ffffff",
 
   // Social and Analytics
-  // twitterUsername: "@anouncompany",
   googleAnalyticsID: "",
 }
