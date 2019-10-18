@@ -14,9 +14,10 @@ import "../styles/app.scss"
 function IndexPage(props) {
   const [showParticles, setShowParticles] = useState(false)
   // only call GetWindowSize if there is window object. Used to prevent Build() errors
-  const { data } = props
-  const posts = data.allMarkdownRemark.edges
+  /* const { data } = props
+   const posts = data.allMarkdownRemark.edges
 
+  */
   /* mount particles field AFTER this element has rendered
   to prevent 'window is not defined'
   */
@@ -37,6 +38,12 @@ function IndexPage(props) {
         <h3>DESIGN</h3>
         <h3>BUILD</h3>
       </section>
+    </Layout>
+  )
+}
+
+export default IndexPage
+/*
       <section className="anoun-home--section3">
         <h2>Blog Posts</h2>
         <div className="blog-posts__container">
@@ -69,12 +76,7 @@ function IndexPage(props) {
           })}
         </div>
       </section>
-    </Layout>
-  )
-}
-
-export default IndexPage
-
+ 
 export const indexQuery = graphql`
   query {
     allMarkdownRemark(
@@ -103,3 +105,4 @@ export const indexQuery = graphql`
     }
   }
 `
+*/

@@ -2,8 +2,7 @@ module.exports = {
   // SEO
   title: "Westley Strellis", // Navigation and Site Title
   titleTemplate: "%s · Full Stack Software Developer", // Template for Page Titles
-  description:
-    "Westley Strellis' personal website. Includes his portfolio and blog.",
+  description: "Westley Strellis' personal website.",
   siteUrl: "https://westleystrellis.com", // Domain of your site. No trailing slash!
   image: "/images/site_image.png", // Used for SEO Share Image
 
