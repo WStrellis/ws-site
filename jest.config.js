@@ -70,12 +70,7 @@ module.exports = {
     // maxWorkers: "50%",
 
     // An array of directory names to be searched recursively up from the requiring module's location
-    moduleDirectories: [
-        "node_modules",
-        "src/styles",
-        "test-utils",
-        "src/components",
-    ],
+    moduleDirectories: ["node_modules", "test-utils", "src/components"],
 
     // An array of file extensions your modules use
     moduleFileExtensions: ["js", "jsx", "json", "node"],
@@ -84,8 +79,6 @@ module.exports = {
     moduleNameMapper: {
         "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
             "<rootDir>/test-utils/__mocks__/fileMock.js",
-        "\\.(css|scss|sass)$": "identity-obj-proxy",
-        "\\.module\\.(css|scss|sass)$": "identity-obj-proxy",
     },
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

@@ -6,7 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline"
 ReactDOM.render(
     <>
         <CssBaseline />
-        <App title={"React is cool"} />
+        <App />
     </>,
     document.getElementById("root"),
 )
