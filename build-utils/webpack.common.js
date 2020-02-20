@@ -164,7 +164,7 @@ module.exports = (isDevelopment, path, webpack, envKeys) => ({
         // generate index.html
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            title: "",
+            title: "Westley Strellis",
             favicon: "./src/assets/images/favicon.png",
         }),
         // put css in separate file from js
