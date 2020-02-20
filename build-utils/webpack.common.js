@@ -73,10 +73,10 @@ module.exports = (path, webpack, envKeys) => ({
         // generate index.html
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            title: "Westley's Material UI Template",
+            title: "Westley Strellis - Software Engineer",
             favicon: "./src/assets/images/favicon.png",
         }),
-        // put css in separate file from js
+        // inject environment variables
         new webpack.DefinePlugin(envKeys),
     ],
 })
