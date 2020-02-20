@@ -1,7 +1,7 @@
 {
-    "name": "mui-template",
+    "name": "Westley Strellis Portfolio Site",
     "version": "1.0.0",
-    "description": "Boilerlate React template with Material UI, Jest, and Webpack",
+    "description": "Westley Strellis Portfolio Site",
     "main": "index.js",
     "sideEffects": false,
     "scripts": {
