@@ -1,11 +1,8 @@
 import React from "react"
+import Home from "Home.page"
 
 const App = props => {
-    return (
-        <div>
-            <p>New Version Coming Soon!</p>
-        </div>
-    )
+    return <Home />
 }
 
 export default App
