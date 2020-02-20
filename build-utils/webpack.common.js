@@ -2,14 +2,14 @@
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-module.exports = (isDevelopment, path, webpack, envKeys) => ({
+module.exports = (path, webpack, envKeys) => ({
     entry: {
         app: "./src/index.js",
     },
     output: {
         filename: "[name].[hash].js",
-        publicPath: "/",
         path: path.resolve(__dirname, "../", "public"),
+        // used for codesplitting
         chunkFilename: "[name].[hash].js",
     },
     module: {
@@ -73,7 +73,7 @@ module.exports = (isDevelopment, path, webpack, envKeys) => ({
         // generate index.html
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            title: "Westley Strellis",
+            title: "Westley's Material UI Template",
             favicon: "./src/assets/images/favicon.png",
         }),
         // put css in separate file from js
