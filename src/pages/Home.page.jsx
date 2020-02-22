@@ -29,6 +29,9 @@ function Copyright() {
 } // end Copyright
 
 const useStyles = makeStyles(theme => ({
+    pageWrapper: {
+        backgroundColor: theme.palette.grey["900"],
+    },
     icon: {
         marginRight: theme.spacing(2),
     },
@@ -50,9 +53,15 @@ const useStyles = makeStyles(theme => ({
     },
     cardMedia: {
         paddingTop: "56.25%", // 16:9
+        borderRadius: `${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} 0 0`,
     },
     cardContent: {
         flexGrow: 1,
+        backgroundColor: theme.palette.grey["50"],
+    },
+    cardActions: {
+        backgroundColor: theme.palette.grey["50"],
+        borderRadius: ` 0 0 ${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} `,
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
@@ -66,7 +75,7 @@ function Home() {
     const classes = useStyles()
     return (
         <>
-            <main>
+            <main className={classes.pageWrapper}>
                 {/* Hero*/}
                 <section className={classes.heroContent}>
                     <Container maxWidth="sm">
@@ -110,8 +119,12 @@ function Home() {
                                     </Typography>
                                     <Typography>project description</Typography>
                                 </CardContent>
-                                <CardActions>
-                                    <Button size="small" color="primary">
+                                <CardActions className={classes.cardActions}>
+                                    <Button
+                                        variant="contained"
+                                        size="small"
+                                        color="primary"
+                                    >
                                         View
                                     </Button>
                                 </CardActions>
