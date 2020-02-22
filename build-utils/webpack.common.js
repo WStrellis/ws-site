@@ -48,7 +48,7 @@ module.exports = (path, webpack, envKeys) => ({
     },
     resolve: {
         // Eliminate need to type relative path to directories/files from these paths
-        modules: ["node_modules", "test-utils", "src/components"],
+        modules: ["node_modules", "test-utils", "src/components", "src/pages"],
         //  imports don't have to use the  file extension
         enforceExtension: false,
         extensions: [
