@@ -82,22 +82,22 @@ const projects = [
     {
         title: "Community Calendar",
         description: "Find events in your local community",
-        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/community-calendar/home__16x9.sm.jpg`,
+        image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/community-calendar/home__16x9.sm.jpg`,
     },
     {
         title: "Saltiest Hacker News",
         description: "The saltiest comments on Hacker News",
-        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/saltiest-hacker/saltiest-hacker__16x9.sm.jpg`,
+        image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/saltiest-hacker/saltiest-hacker__16x9.sm.jpg`,
     },
     {
         title: "Life GPA",
         description: "Keep track of your good and bad habits",
-        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/lgpa/main-screen__16x9.sm.jpg`,
+        image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/lgpa/main-screen__16x9.sm.jpg`,
     },
     {
         title: "International Rural School Resource",
         description: "Connect rural schools to supportive organizations",
-        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/rural-school/rural-login__16x9.sm.jpg`,
+        image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/rural-school/rural-login__16x9.sm.jpg`,
     },
 ]
 
