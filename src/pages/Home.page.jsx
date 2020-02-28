@@ -30,21 +30,18 @@ function Copyright() {
 
 const useStyles = makeStyles(theme => ({
     neumorphic: {
-        // boxShadow: `-5px -5px 10px ${theme.palette.grey["700"]},
-        //  5px 5px 10px ${theme.palette.grey["900"]}`,
-        boxShadow: `-10px -10px 20px ${theme.palette.grey["700"]}, 
-             10px 10px 20px ${theme.palette.grey["900"]}`,
+        boxShadow: `-10px -10px 20px 10px ${theme.palette.primary.light}, 
+             10px 10px 20px 10px ${theme.palette.primary.dark}`,
         borderRadius: theme.shape.borderRadiusLg,
         backgroundColor: theme.palette.grey["800"],
     },
     pageWrapper: {
-        backgroundColor: theme.palette.grey["800"],
+        backgroundColor: theme.palette.primary.main,
     },
     icon: {
         marginRight: theme.spacing(2),
     },
     heroContent: {
-        // backgroundColor: theme.palette.background.paper,
         backgroundColor: theme.palette.grey["900"],
         padding: theme.spacing(8, 0, 6),
     },
@@ -66,10 +63,11 @@ const useStyles = makeStyles(theme => ({
     },
     cardContent: {
         flexGrow: 1,
-        backgroundColor: theme.palette.grey["50"],
+        backgroundColor: theme.palette.primary.main,
     },
     cardActions: {
-        backgroundColor: theme.palette.grey["50"],
+        // backgroundColor: theme.palette.grey["50"],
+        backgroundColor: theme.palette.primary.main,
         borderRadius: ` 0 0 ${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} `,
     },
     footer: {
