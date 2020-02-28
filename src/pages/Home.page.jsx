@@ -1,4 +1,5 @@
 import React from "react"
+import clsx from "clsx"
 
 // MUI
 import Button from "@material-ui/core/Button"
@@ -35,7 +36,12 @@ const useStyles = makeStyles(theme => ({
         // boxShadow: `-10px -10px 20px 10px ${theme.palette.primary.light},
         //  10px 10px 20px 10px ${theme.palette.primary.dark}`,
         borderRadius: theme.shape.borderRadiusLg,
-        backgroundColor: theme.palette.grey["800"],
+        backgroundColor: theme.palette.primary,
+    },
+    flexColumn: {
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
     },
     pageWrapper: {
         backgroundColor: theme.palette.primary.main,
@@ -66,10 +72,11 @@ const useStyles = makeStyles(theme => ({
     cardContent: {
         flexGrow: 1,
         backgroundColor: theme.palette.primary.main,
+        color: theme.palette.grey["50"],
     },
     cardActions: {
-        // backgroundColor: theme.palette.grey["50"],
         backgroundColor: theme.palette.primary.main,
+        color: theme.palette.grey["50"],
         borderRadius: ` 0 0 ${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} `,
     },
     footer: {
@@ -99,10 +106,16 @@ const projects = [
         description: "Connect rural schools to supportive organizations",
         image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/rural-school/rural-login__16x9.sm.jpg`,
     },
+    {
+        title: "NASA APOD",
+        description: "View photos from NASA",
+        image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/apod/apod__16x9.sm.jpg`,
+    },
 ]
 
 function Home() {
-    const classes = useStyles()
+    const {neumorphic, flexColumn, ...classes} = useStyles()
+
     return (
         <>
             <main className={classes.pageWrapper}>
@@ -134,7 +147,7 @@ function Home() {
                     <Grid container spacing={6}>
                         {projects.map((p, ind) => (
                             <Grid item key={ind} xs={12} sm={6} md={4}>
-                                <div className={classes.neumorphic}>
+                                <div className={clsx(neumorphic, flexColumn)}>
                                     <CardMedia
                                         className={classes.cardMedia}
                                         image={p.image}
