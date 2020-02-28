@@ -29,14 +29,22 @@ function Copyright() {
 } // end Copyright
 
 const useStyles = makeStyles(theme => ({
+    neumorphic: {
+        boxShadow: `-7px -7px 15px 7px ${theme.palette.primary.light}, 
+             7px 7px 15px 7px ${theme.palette.primary.dark}`,
+        // boxShadow: `-10px -10px 20px 10px ${theme.palette.primary.light},
+        //  10px 10px 20px 10px ${theme.palette.primary.dark}`,
+        borderRadius: theme.shape.borderRadiusLg,
+        backgroundColor: theme.palette.grey["800"],
+    },
     pageWrapper: {
-        backgroundColor: theme.palette.grey["900"],
+        backgroundColor: theme.palette.primary.main,
     },
     icon: {
         marginRight: theme.spacing(2),
     },
     heroContent: {
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.grey["900"],
         padding: theme.spacing(8, 0, 6),
     },
     heroButtons: {
@@ -57,10 +65,11 @@ const useStyles = makeStyles(theme => ({
     },
     cardContent: {
         flexGrow: 1,
-        backgroundColor: theme.palette.grey["50"],
+        backgroundColor: theme.palette.primary.main,
     },
     cardActions: {
-        backgroundColor: theme.palette.grey["50"],
+        // backgroundColor: theme.palette.grey["50"],
+        backgroundColor: theme.palette.primary.main,
         borderRadius: ` 0 0 ${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} `,
     },
     footer: {
@@ -69,7 +78,28 @@ const useStyles = makeStyles(theme => ({
     },
 })) // end useStyles
 
-const cards = [1, 2, 3, 4, 5, 6]
+const projects = [
+    {
+        title: "Community Calendar",
+        description: "Find events in your local community",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/community-calendar/home__16x9.sm.jpg`,
+    },
+    {
+        title: "Saltiest Hacker News",
+        description: "The saltiest comments on Hacker News",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/saltiest-hacker/saltiest-hacker__16x9.sm.jpg`,
+    },
+    {
+        title: "Life GPA",
+        description: "Keep track of your good and bad habits",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/lgpa/main-screen__16x9.sm.jpg`,
+    },
+    {
+        title: "International Rural School Resource",
+        description: "Connect rural schools to supportive organizations",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/rural-school/rural-login__16x9.sm.jpg`,
+    },
+]
 
 function Home() {
     const classes = useStyles()
@@ -94,40 +124,46 @@ function Home() {
                             color="textSecondary"
                             paragraph
                         >
-                            Hi! Welcome my portfolio site!
+                            Hi! Welcome to my portfolio site!
                         </Typography>
                     </Container>
                 </section>
 
                 {/* Project Cards*/}
                 <Container className={classes.cardGrid} maxWidth="md">
-                    <Grid container spacing={4}>
-                        {cards.map(card => (
-                            <Grid item key={card} xs={12} sm={6} md={4}>
-                                <CardMedia
-                                    className={classes.cardMedia}
-                                    image="https://source.unsplash.com/random"
-                                    title="blah"
-                                ></CardMedia>
-                                <CardContent className={classes.cardContent}>
-                                    <Typography
-                                        gutterBottom
-                                        variant="h5"
-                                        component="h2"
+                    <Grid container spacing={6}>
+                        {projects.map((p, ind) => (
+                            <Grid item key={ind} xs={12} sm={6} md={4}>
+                                <div className={classes.neumorphic}>
+                                    <CardMedia
+                                        className={classes.cardMedia}
+                                        image={p.image}
+                                        title={`Image of ${p.title}`}
+                                    ></CardMedia>
+                                    <CardContent
+                                        className={classes.cardContent}
                                     >
-                                        Project Title
-                                    </Typography>
-                                    <Typography>project description</Typography>
-                                </CardContent>
-                                <CardActions className={classes.cardActions}>
-                                    <Button
-                                        variant="contained"
-                                        size="small"
-                                        color="primary"
+                                        <Typography
+                                            gutterBottom
+                                            variant="h6"
+                                            component="h2"
+                                        >
+                                            {p.title}
+                                        </Typography>
+                                        <Typography>{p.description}</Typography>
+                                    </CardContent>
+                                    <CardActions
+                                        className={classes.cardActions}
                                     >
-                                        View
-                                    </Button>
-                                </CardActions>
+                                        <Button
+                                            variant="contained"
+                                            size="small"
+                                            color="primary"
+                                        >
+                                            View
+                                        </Button>
+                                    </CardActions>
+                                </div>
                             </Grid>
                         ))}
                     </Grid>
