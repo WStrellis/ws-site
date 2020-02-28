@@ -30,8 +30,10 @@ function Copyright() {
 
 const useStyles = makeStyles(theme => ({
     neumorphic: {
-        boxShadow: `-10px -10px 20px 10px ${theme.palette.primary.light}, 
-             10px 10px 20px 10px ${theme.palette.primary.dark}`,
+        boxShadow: `-7px -7px 15px 7px ${theme.palette.primary.light}, 
+             7px 7px 15px 7px ${theme.palette.primary.dark}`,
+        // boxShadow: `-10px -10px 20px 10px ${theme.palette.primary.light},
+        //  10px 10px 20px 10px ${theme.palette.primary.dark}`,
         borderRadius: theme.shape.borderRadiusLg,
         backgroundColor: theme.palette.grey["800"],
     },
@@ -79,8 +81,23 @@ const useStyles = makeStyles(theme => ({
 const projects = [
     {
         title: "Community Calendar",
-        description: "React application for finding local events",
+        description: "Find events in your local community",
         image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/community-calendar/home__16x9.sm.jpg`,
+    },
+    {
+        title: "Saltiest Hacker News",
+        description: "The saltiest comments on Hacker News",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/saltiest-hacker/saltiest-hacker__16x9.sm.jpg`,
+    },
+    {
+        title: "Life GPA",
+        description: "Keep track of your good and bad habits",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/lgpa/main-screen__16x9.sm.jpg`,
+    },
+    {
+        title: "International Rural School Resource",
+        description: "Connect rural schools to supportive organizations",
+        image: `http://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/rural-school/rural-login__16x9.sm.jpg`,
     },
 ]
 
@@ -114,7 +131,7 @@ function Home() {
 
                 {/* Project Cards*/}
                 <Container className={classes.cardGrid} maxWidth="md">
-                    <Grid container spacing={4}>
+                    <Grid container spacing={6}>
                         {projects.map((p, ind) => (
                             <Grid item key={ind} xs={12} sm={6} md={4}>
                                 <div className={classes.neumorphic}>
