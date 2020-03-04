@@ -1,6 +1,8 @@
 import React from "react"
 import clsx from "clsx"
 
+import GithubIcon from "Github.icon"
+
 // MUI
 import Button from "@material-ui/core/Button"
 import Card from "@material-ui/core/Card"
@@ -78,10 +80,14 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.primary.main,
         color: theme.palette.grey["50"],
         borderRadius: ` 0 0 ${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} `,
+        justifyContent: "space-between",
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
+    },
+    githubLink: {
+        display: "inline-flex",
     },
 })) // end useStyles
 
@@ -189,6 +195,17 @@ function Home() {
                                         >
                                             View
                                         </Button>
+                                        {p.repo && (
+                                            <a
+                                                className={classes.githubLink}
+                                                href={p.repo}
+                                                title={p.repo}
+                                                rel="noreferrer noopener"
+                                                target="_blank"
+                                            >
+                                                <GithubIcon />
+                                            </a>
+                                        )}
                                     </CardActions>
                                 </div>
                             </Grid>
