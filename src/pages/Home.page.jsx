@@ -1,6 +1,8 @@
 import React from "react"
 import clsx from "clsx"
 
+import GithubIcon from "Github.icon"
+
 // MUI
 import Button from "@material-ui/core/Button"
 import Card from "@material-ui/core/Card"
@@ -78,10 +80,14 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.primary.main,
         color: theme.palette.grey["50"],
         borderRadius: ` 0 0 ${theme.shape.borderRadiusLg} ${theme.shape.borderRadiusLg} `,
+        justifyContent: "space-between",
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
+    },
+    githubLink: {
+        display: "inline-flex",
     },
 })) // end useStyles
 
@@ -90,26 +96,36 @@ const projects = [
         title: "Community Calendar",
         description: "Find events in your local community",
         image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/community-calendar/home__16x9.sm.jpg`,
+        linkUrl: "https://www.ourcommunitycal.com/",
+        repo: "https://github.com/Lambda-School-Labs/community-calendar-fe",
     },
     {
         title: "Saltiest Hacker News",
         description: "The saltiest comments on Hacker News",
         image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/saltiest-hacker/saltiest-hacker__16x9.sm.jpg`,
+        linkUrl: "https://frontend.saltiest-hacker-news-trolls-2.now.sh/",
+        repo: "https://github.com/Saltiest-Hacker-News-Trolls-2/backend",
     },
     {
         title: "Life GPA",
         description: "Keep track of your good and bad habits",
         image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/lgpa/main-screen__16x9.sm.jpg`,
+        linkUrl: "https://life-gpa.now.sh/",
+        repo: "https://github.com/lifegpa-bw/lifegpa-frontend",
     },
     {
         title: "International Rural School Resource",
         description: "Connect rural schools to supportive organizations",
         image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/rural-school/rural-login__16x9.sm.jpg`,
+        linkUrl: "https://admiring-lewin-69d4df.netlify.com/",
+        repo: null,
     },
     {
         title: "NASA APOD",
         description: "View photos from NASA",
         image: `https://wstrellis-images.s3.amazonaws.com/ws-portfolio-images/apod/apod__16x9.sm.jpg`,
+        linkUrl: "https://apod-wstrellis.netlify.com/",
+        repo: "https://github.com/WStrellis/apod-app",
     },
 ]
 
@@ -172,9 +188,24 @@ function Home() {
                                             variant="contained"
                                             size="small"
                                             color="primary"
+                                            href={p.linkUrl}
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                            title={p.linkUrl}
                                         >
                                             View
                                         </Button>
+                                        {p.repo && (
+                                            <a
+                                                className={classes.githubLink}
+                                                href={p.repo}
+                                                title={p.repo}
+                                                rel="noreferrer noopener"
+                                                target="_blank"
+                                            >
+                                                <GithubIcon />
+                                            </a>
+                                        )}
                                     </CardActions>
                                 </div>
                             </Grid>
